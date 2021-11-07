@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'progress';
+  title = 'Progress-Bar-Project';
+
+  label = 'Progress';
+  max = 100;
+  value = 14;
+
+  onChange(progressValue:any) {
+    console.log("Progress is " + progressValue +"%")
+  }
+  onClick(progressValue:any) {
+    console.log("Progress is " + progressValue +"%")
+  }
 }

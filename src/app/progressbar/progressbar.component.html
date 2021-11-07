@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2 style="margin: auto;">Domain Course 6 P5</h2>
+            <p style="margin: auto;">Progress Bar</p>
+
+            <div class="progresscard mt-5">
+                <div *ngIf="normalPB" class="mt-5" id="progressbar" (click)="onClick()">
+                    <div class="row" class="progressbar-out">
+                        <div [ngStyle]="{'width.%':value}" class="progressbar-in"></div><i>{{label}} {{value}}% ...</i>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin: 10px;">
+                <button (click)="showProgressBar(1)" class="btn btn-primary">Start Progress</button>
+            </div>
+        </div>
+    </div>
+</div>
